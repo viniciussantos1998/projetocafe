@@ -1,0 +1,52 @@
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Barlow', sans-serif;
+  
+  height: 4000px; /* Aumentar o tamanho da tela para aparecer a barra de rolagem */
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banners-1{
+  background-image: url(./assets/banner-1.png);
+}
+
+.banners{
+/* Para a imagem da classe .banners-1 ser exibida é necessário definir width e height */
+width: 100%;
+height: 100vh;
+/* Para a imagem não se repetir */
+background-repeat: no-repeat; 
+/* para a imagem ocupar todo o espaço da tela */
+background-size: cover;
+/* para centralizar a imagem */
+background-position: center;
+/* A tela foi aumentanda para height de 4000px, aparecerá a barra de rolagem, então para fixar a imagem (chaamado de Parallax) */
+background-attachment: fixed;
+}
+
+.banners-titulo {
+  /* testar a opacidade com valores 0, 1 também */
+  --bs-bg-opacity: .5;
+}
+
+.banner-2{
+  background-image: url(./assets/banner-2.png);
+}
+
+.banner-3{
+  background-image: url(./assets/banner-3.png);
+}
